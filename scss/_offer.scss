@@ -1,0 +1,42 @@
+.offer {
+    flex-basis: 100%;
+    height: 100vh;
+    border-top: 5px solid $main-color;
+    position: relative;
+    @include flex;
+    justify-content: space-between;
+    &__title {
+        flex-basis: 100%;
+        font-size: 50px;
+        text-align: center;
+        color: $main-color;
+        padding: 40px 0 0 0;
+        flex-grow: 1;
+        transition: 0.2s;
+      }
+      &__list {
+        flex-basis: 100%;
+        height: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        background-color: $main-color;
+        transition: 0.2s;
+        animation-delay: 0.3s;
+      }
+      &__item {
+        padding: 20px 10px;
+        flex-basis: 50%;
+        font-size: 15px;
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        transition: 0.2s;
+        text-transform: uppercase;
+        &:hover {
+            transform: scale(1.2);
+          }
+      }
+  }

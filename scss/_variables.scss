@@ -1,0 +1,29 @@
+$main-color: green;
+$font:'Roboto Condensed', sans-serif;
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap; 
+}
+$breakpoints: 
+(
+    xsmall: (min-width: 460px),
+    small: (min-width: 640px),
+    medium: (min-width: 800px),
+    large: (min-width: 1024px),
+    big: (min-width: 1200px),
+
+);
+
+@mixin media($breakpoint) {
+    $size: map-get($breakpoints , $breakpoint );
+    @if($size) 
+    {
+@media #{$size}{
+    @content;
+}
+    }
+    @else{
+        @error 'błąd';
+    }
+}

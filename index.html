@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Przychodnia Weterynaryjna - FoWet</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="menu">
+        <button class="menu__openMenu"><i class="fas fa-bars"></i></button>
+        <div class="menu__logo">
+          <i class="fas fa-paw menu__icon"></i>
+          <h1 class="menu__title">Przychodnia Weterynarii FoWet</h1>
+        </div>
+        <div class="menu__list">
+          <a href="" class="menu__link">O nas</a>
+          <a href="" class="menu__link">Galeria</a>
+          <a href="" class="menu__link">Usługi</a>
+          <a href="" class="menu__link">Kontakt</a>
+        </div>
+      </nav>
+      <header class="header">
+        <img src="./img/dog.jpg" alt="" class="header__image" />
+        <p class="header__image__description">Profesjonalna obsługa</p>
+      </header>
+      <section class="about">
+        <h2 class="about__title">O nas</h2>
+        <p class="about__description">
+          Przychodnia Weterynaryjana "Fowet" działa nieprzerwanie od 2009 roku.
+          Początkowo był to gabinet weterynaryjny, jednak z czasem spełniliśmy
+          wymogi, umożliwiające przekształcenie naszego zakładu w przychodnię.
+          Dbamy o zdrowie Waszych pupili, zapewniając miłą i profesjonalną
+          obsługę.
+        </p>
+        <div class="about__doctor">
+          <img class="about__doctor__image" src="./img/doctor.jpg" alt="" />
+          <p class="about__doctor__description">
+            lek.wet. Waldemar Focht <br />
+            specjalista chorób psów i kotów
+          </p>
+        </div>
+        <div class="about__doctor">
+          <img class="about__doctor__image" src="./img/doctor.jpg" alt="" />
+          <p class="about__doctor__description">lek.wet. Włodzimierz Focht</p>
+        </div>
+      </section>
+
+      <section class="offer" id="sectionOffers">
+        <h1 class="offer__title anim__item">Zakres usług</h1>
+        <ul class="offer__list anim__item">
+          <li class="offer__item">
+            <i class="fas fa-stethoscope"></i> profilaktyka
+          </li>
+          <li class="offer__item">
+            <i class="fas fa-vial"></i> pełna diagnostyka laboratoryjna
+          </li>
+          <li class="offer__item">
+            <i class="fas fa-file-medical-alt"></i> diagnostyka obrazowa (USG)
+          </li>
+          <li class="offer__item">
+            <i class="fas fa-procedures"></i> chirurgia miękka <br /><span
+              >(zabiegi profilaktyczne i lecznicze)</span
+            >
+          </li>
+          <li class="offer__item"><i class="fas fa-tooth"></i> stomatologia</li>
+          <li class="offer__item">
+            <i class="fas fa-user-md"></i> porady behawioralne
+          </li>
+          <li class="offer__item"><i class="fas fa-cut"></i> pielęgnacja</li>
+          <li class="offer__item">
+            <i class="far fa-address-card"></i> znakowanie zwierząt i paszporty
+          </li>
+        </ul>
+      </section>
+      <section class="galery" id="Galery">
+        <h1 class="galery__title anim__item">Galeria</h1>
+        <div class="galery__smallImage anim__item">
+          <img src="./img/img1big.jpg" alt="" class="galery__bigImage" />
+        </div>
+        <div class="galery__smallImage anim__item">
+          <img
+            src="./img/cat-2536662_640.jpg"
+            alt=""
+            class="galery__bigImage"
+          />
+        </div>
+        <div class="galery__smallImage anim__item">
+          <img src="./img/img1big.jpg" alt="" class="galery__bigImage" />
+        </div>
+        <div class="galery__smallImage none">
+          <img
+            src="./img/cat-2536662_640.jpg"
+            alt=""
+            class="galery__bigImage"
+          />
+        </div>
+        <div class="galery__smallImage none">
+          <img src="./img/img1big.jpg" alt="" class="galery__bigImage" />
+        </div>
+        <div class="galery__smallImage none">
+          <img
+            src="./img/cat-2536662_640.jpg"
+            alt=""
+            class="galery__bigImage"
+          />
+        </div>
+
+        <button class="galery__showMore">Pokaż więcej</button>
+      </section>
+      <section class="contact">
+        <h2 class="contact__title">Skontaktuj sie z nami</h2>
+
+        <p class="contact__adress">
+          Odwiedź nas pod adresem: <br />
+          62-300 Września ul. Kościuszki 46
+        </p>
+
+        <p class="contact__phone">
+          Lub skontaktuj sie z nami telefonicznie: <br />
+          Numer telefonu: 61 672 10 08 <br />
+          Nagłe przypadki: 669-250-256
+        </p>
+
+        <div class="contact__openHours">
+          <h3 class="contact__openHours__title">Godziny otwarcia:</h3>
+          <p class="hours">Pon-pt: 11-20</p>
+          <p class="hours">Sobota: 10-14</p>
+          <p class="hours">Niedziele i święta: Nieczynne</p>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__description">
+          &copy; 2021 FoWet . Wszelkie prawa zastrzeżone.
+        </p>
+      </footer>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
