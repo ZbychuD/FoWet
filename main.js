@@ -1,6 +1,7 @@
 const mobileMenu = document.querySelector(".menu__list");
 const menuButton = document.querySelector(".menu__openMenu");
 const animItems = [...document.querySelectorAll(".anim__item")];
+const menuLinks = document.querySelectorAll(".menu__link");
 
 const btn = document.querySelector(".galery__showMore");
 const section = document.querySelector(".galery");
@@ -21,6 +22,13 @@ menuButton.addEventListener("click", () => {
     menuButton.classList.remove("active");
     active = !active;
   }
+});
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.style.right = "-100%";
+    menuButton.classList.toggle("active");
+    active = true;
+  });
 });
 
 links.forEach((link, index) => {
@@ -47,7 +55,6 @@ btn.addEventListener("click", () => {
   } else {
     section.classList.remove("activity");
     links.forEach((link, index) => {
-      console.log(link, index);
       if (index >= 3) {
         link.style.display = "none";
       } else return;

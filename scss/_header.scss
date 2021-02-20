@@ -3,12 +3,25 @@
   height: 50vh;
   margin-bottom: 10px;
   position: relative;
+  @include mq(big){
+    margin-top: 15vh;
+    overflow: hidden;
+    height: 90vh;
+}
   
   &__image{
     width:auto;
   height: 100%;
   position: absolute;
   overflow: hidden;
+  @include mq(small){
+    width: 100%;
+  }
+  @include mq(big){
+   height: auto;
+   width:100%;
+   margin-top: -20vh;
+}
   &__description{
     width: 80%;
     position: absolute;
@@ -19,6 +32,19 @@
     background-color: rgba(0,0,0,0.5);
     color: white;
     z-index: 1;
+    @include mq(small){
+      width: 100%;
+      font-size: 60px;
+      top: 80%;
+    left: 50%;
+   transform: translate(-50%,-50%);
+    }
+    @include mq(large){
+      font-size: 80px;
+  }
+  @include mq(big){
+   z-index: 0;
+}
   }
   }
   

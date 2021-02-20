@@ -3,32 +3,69 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $font;
+    text-decoration: none;
 }
 .none{
   display: none;
 }
-div.wrapper {
+.wrapper {
    @include flex;
     overflow: hidden;
     align-items: flex-start;
     height: auto;
+    width: 100%;
+    @include mq(big){
+      max-width: 80%;
+      margin: 0 auto;
   }
+  }
+ 
 .menu {
     flex-basis: 70%;
   height: auto;
   position: relative;
   align-items: center;
+  @include mq(big){
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    z-index: 1;
+}
 &__logo{
     width: 50%;
     height: 10vh;
     margin: 20px;
+    text-decoration: none;
     display: flex;
     justify-content: center;
+    cursor: pointer;
+
+    @include mq(large){
+      height: 15vh;
+      margin-top: 40px;
+  }
+  @include mq(big){
+    height: 17vh;
+    width: 30%;
+margin: 10px;
+}
+   
 }
 &__icon{
     margin: 10px 10px;
     padding-left: 20px;
     font-size: 40px;
+    color: black;
+    @include mq(small){
+      font-size: 70px;
+    }
+    @include mq(large){
+      font-size: 100px;
+  }
+    @include mq(big){
+      font-size: 70px;
+  }
 }
     &__title {
         flex-basis: 100%;
@@ -37,6 +74,15 @@ div.wrapper {
   margin-left: 20px;
   color: $main-color;
   font-weight: bold;
+  @include mq(small){
+    font-size: 30px;
+  }
+  @include mq(large){
+    font-size: 40px;
+}
+  @include mq(big){
+    font-size: 35px;
+}
       }
       &__openMenu{
         margin: 10px 12px;
@@ -48,6 +94,17 @@ div.wrapper {
         border-style: none;
         background-color: transparent;
         z-index: 2;
+        @include mq(small){
+          font-size:65px;
+          right: 5%;
+        }
+        @include mq(large){
+          font-size: 80px;
+          margin-top: 20px;
+      }
+        @include mq(big){
+          display: none;
+      }
         &.active{
             color: white;
   transform: rotate(90deg);
@@ -65,7 +122,13 @@ div.wrapper {
         @include flex;
         z-index: 1;
         transition: 0.3s;
+        @include mq(big){
+          display: none;
+        }
+       
       }
+      
+      
       &__link{
         flex-basis: 100%;
         height: 10vh;
@@ -74,5 +137,41 @@ div.wrapper {
         text-decoration: none;
         color: white;
         border: 2px solid white;
+        @include mq(small){
+          font-size: 35px;
+        }
+        }
+        
+        
+        
       }
-  }
+      .desktop__menu{
+        display: none;
+        @include mq(big){
+          display:block;
+          width: 45%;
+          height: 10vh;
+          position: absolute;
+          top: 0;
+          right: 20%;
+          margin-top: 20px;
+          @include flex;
+          justify-content: space-between;
+          &__link{
+            display: block;
+            color: $main-color;
+            font-size: 30px;
+            border: 2px solid $main-color;
+            border-radius: 50%;
+            padding: 15px;
+            transition: .3s;
+            &:hover{
+              background-color: $main-color;
+              color: white;
+            }
+            }
+        }
+        
+      }
+      
+  

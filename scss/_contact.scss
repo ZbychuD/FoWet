@@ -11,25 +11,49 @@
         font-size: 30px;
         text-align: center;
         padding: 15px;
+        @include mq(small){
+            font-size: 60px;
+        }
     }
     &__adress{
         font-size: 20px;
         flex-basis: 100%;
         text-align: center;
         line-height: 30px;
+        @include mq(small){
+            font-size: 40px;
+            line-height: 50px;
+        }@include mq(big){
+            margin-bottom: 50px;
+         }
     }
     &__phone{
         font-size: 20px;
         flex-basis: 100%;
         text-align: center;
+        @include mq(small){
+            font-size: 40px;
+        }
+        @include mq(big){
+            margin-bottom: 50px;
+         }
     }
     &__openHours{
         flex-basis: 100%;
         text-align: center;
         font-size: 25px;
+        @include mq(small){
+            font-size: 40px;
+        }
+        @include mq(big){
+            margin-bottom: 50px;
+         }
         &__title{
             font-size: 35px;
             margin-bottom: 20px;
+            @include mq(small){
+                font-size: 50px;
+            }
         }
     }
 }

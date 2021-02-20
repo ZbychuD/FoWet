@@ -8,6 +8,12 @@
         font-size: 40px;
         padding: 10px;
         color: white;
+        @include mq(small){
+            font-size: 60px;
+        }
+        @include mq(large){
+            font-size: 80px;
+        }
     }
     &__description{
         text-align: center;
@@ -15,6 +21,12 @@
         padding: 10px 10px 40px;
         font-weight: bold;
         color: white;
+        @include mq(small){
+            font-size: 30px;
+        }
+        @include mq(large){
+            font-size: 40px;
+        }
     }
     &__doctor{
         flex-basis: 100%;
@@ -25,14 +37,30 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        @include mq(big){
+            padding-top: 20px;
+         }
+        
         &__image{
             height: 80%;
             width:auto;
+            
+            
     }
     &__description{
         font-size: 18px;
         font-weight: bold;
         text-align: center;
+        @include mq(small){
+            font-size: 40px;
+        }
+        @include mq(large){
+            font-size: 60px;
+        }
+        @include mq(big){
+            flex-basis: 100%;
+            font-size: 35px;
+         }
         }
     }
   }
