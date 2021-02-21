@@ -1,8 +1,8 @@
 .contact {
     flex-basis: 100%;
     min-height: 70vh;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 20px;
+    @include flex;
     color: white;
     justify-content: space-between;
     background-color: rgb(34, 32, 32);
@@ -21,8 +21,8 @@
         text-align: center;
         line-height: 30px;
         @include mq(small){
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 30px;
+            line-height: 60px;
         }@include mq(big){
             margin-bottom: 50px;
          }
@@ -32,7 +32,8 @@
         flex-basis: 100%;
         text-align: center;
         @include mq(small){
-            font-size: 40px;
+            font-size: 30px;
+            line-height: 50px;
         }
         @include mq(big){
             margin-bottom: 50px;
@@ -50,10 +51,14 @@
          }
         &__title{
             font-size: 35px;
-            margin-bottom: 20px;
+            margin: 20px 0;
             @include mq(small){
                 font-size: 50px;
             }
         }
+    }
+    &__span{
+        font-weight: bold;
+        text-decoration: underline;
     }
 }

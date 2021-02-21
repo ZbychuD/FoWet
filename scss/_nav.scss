@@ -25,6 +25,7 @@
   height: auto;
   position: relative;
   align-items: center;
+  
   @include mq(big){
     position: fixed;
     width: 100%;
@@ -75,7 +76,7 @@ margin: 10px;
   color: $main-color;
   font-weight: bold;
   @include mq(small){
-    font-size: 30px;
+    font-size: 25px;
   }
   @include mq(large){
     font-size: 40px;

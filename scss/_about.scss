@@ -30,11 +30,10 @@
     }
     &__doctor{
         flex-basis: 100%;
-        height: 60vh;
+        height: 70vh;
         border: 5px solid white;
         background-color: white;
-        display: flex;
-        flex-wrap: wrap;
+        @include flex;
         align-items: center;
         justify-content: center;
         @include mq(big){
@@ -52,7 +51,7 @@
         font-weight: bold;
         text-align: center;
         @include mq(small){
-            font-size: 40px;
+            font-size: 45px;
         }
         @include mq(large){
             font-size: 60px;

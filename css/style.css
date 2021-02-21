@@ -118,7 +118,7 @@
 
 @media (min-width: 640px) {
   .menu__title {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -379,7 +379,7 @@
 .about__doctor {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 60vh;
+  height: 70vh;
   border: 5px solid white;
   background-color: white;
   display: -webkit-box;
@@ -414,7 +414,7 @@
 
 @media (min-width: 640px) {
   .about__doctor__description {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
@@ -652,6 +652,7 @@
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   min-height: 70vh;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,8 +689,8 @@
 
 @media (min-width: 640px) {
   .contact__adress {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 60px;
   }
 }
 
@@ -708,7 +709,8 @@
 
 @media (min-width: 640px) {
   .contact__phone {
-    font-size: 40px;
+    font-size: 30px;
+    line-height: 50px;
   }
 }
 
@@ -739,13 +741,18 @@
 
 .contact__openHours__title {
   font-size: 35px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 @media (min-width: 640px) {
   .contact__openHours__title {
     font-size: 50px;
   }
+}
+
+.contact__span {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .footer {
